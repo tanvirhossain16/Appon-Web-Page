@@ -1,0 +1,83 @@
+// ---- 🙂 ------
+@import "../mixin/mixin";
+@import "../variables/variables";
+// ---- 🙂 ------
+
+#head_vedio{
+    .common_heading{
+        h2{
+            @include section_heading;
+            margin-top: 60px;
+            margin-left: 106px;
+        }
+        img{
+            margin-left: 125px;
+        }
+    }
+}
+#main_part{
+    background: url(../images/image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    .overlay{
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        .icon{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 170px;
+            margin-top: 230px;
+            transition: all linear 0.3s;
+            &:hover{
+                border: 3px solid #744fa0;
+                a{
+                    svg{
+                        path{
+                            fill: #744fa0;
+                        }
+                    }
+                }
+            }
+            a{
+                svg{
+                    path{
+                        fill: #fff;
+                        transition: all linear 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+.vbox-overlay{
+    width: 838px;
+    margin-left: 265px;
+    .vbox-backdrop{
+        visibility: hidden;
+    }
+    .vbox-container{
+        .vbox-content{
+            opacity: 1;
+            background: #f1f1f1;
+            border-radius: 5px;
+        }
+    }
+    .vbox-close{
+        svg{
+            margin-top: 24px;
+            color: #597a24ad;
+            margin-left: 48px;
+            margin-right: 265px;
+        }
+    }
+}

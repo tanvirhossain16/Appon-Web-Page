@@ -1,0 +1,39 @@
+@import "../mixin/mixin";
+@import "../variables/variables";
+
+
+
+#about{
+    .info{
+        .heading{
+            margin-top: -75px;
+            margin-left: 223px;
+            h2{
+                font-family: var(--ff-1);
+                font-weight: 700;
+                font-size: 24px;
+                color: #353535;
+                text-transform: uppercase;
+            }
+            img{
+                margin-top: -2px;
+            }
+        }
+        p{
+            font-family: var(--ff-1);
+            font-weight: 400;
+            font-size: 14px;
+            color: #555555;
+            margin-top: 28px;
+            span{
+                margin-left: 200px;
+            }
+        }
+        .second_child{
+            margin-top: 24px;
+            span{
+                margin-left: 200px;
+            }
+        }
+    }
+}

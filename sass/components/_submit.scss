@@ -1,0 +1,38 @@
+// ---- 🙂 ------
+@import "../mixin/mixin";
+@import "../variables/variables";
+// ---- 🙂 ------
+
+#get_in_touch{
+    .common_heading{
+        h2{
+            @include section_heading;
+            margin-top: 60px;
+            margin-left: 105px;
+        }
+        img{
+            margin-left: 122px;
+        }
+    }
+    input{
+        width: 100%;
+        height: 48px;
+        border-radius: 15px;
+        margin-top: 60px;
+        padding-left: 5px;
+    }
+    .message{
+        width: 100%;
+        height: 200px;
+        border-radius: 15px;
+        padding-bottom: 160px;
+        margin-bottom: 26px;
+    }
+    .send{
+        a{
+            @include button;
+            text-transform: uppercase;
+            margin-left: 135px;
+        }
+    }
+}

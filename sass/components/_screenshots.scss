@@ -1,0 +1,25 @@
+// ----- 🥳 --------
+
+@import "../mixin/mixin";
+@import "../variables/variables";
+
+// ----- 🥳 --------
+
+
+#screenshots_slider{
+    .common_heading{
+        h2{
+            @include section_heading;
+            margin-top: 60px;
+            margin-left: 100px;
+        }
+        img{
+            margin-left: 127px;
+        }
+    }
+    .screen_slider{
+        display: flex;
+        margin-top: 60px;
+    }
+}
+

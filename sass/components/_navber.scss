@@ -1,0 +1,52 @@
+@import "../mixin/mixin";
+@import "../variables/variables";
+#nav{
+    width: 100%;
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .nav_menu{
+        .nav_items{
+            .nav-item{
+                position: relative;
+                margin-left: 20px;
+                transition: all linear 0.3s;
+                &::after{
+                    content: "";
+                    width: 0;
+                    height: 1px;
+                    background: #744fa0;
+                    position: absolute;
+                    bottom: 0;
+                    left: 9px;
+                    transition: all linear 0.3s;
+                }
+                &:hover{
+                    &::after{
+                        width: 15px;
+                    }
+                }
+                .nav-link{
+                    @include font_style;
+                    transition: all linear 0.3s;
+                    &:hover{
+                        color: #744fa0;
+                    }
+                
+                }
+            }
+        }
+        .button{
+            a{
+               @include button;
+               transition: all linear 0.3s;
+               &:hover{
+                   border: 1px solid #fff;
+                   background: #fff;
+                   color: #744fa0;
+               }
+            }
+        }
+    }
+}

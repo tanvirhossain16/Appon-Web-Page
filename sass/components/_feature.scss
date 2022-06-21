@@ -1,0 +1,107 @@
+@import "../mixin/_mixin";
+@import "../variables/_variables";
+
+#feature{
+    background: #f1f1f1;
+    .common_heading{
+        h2{
+            @include section_heading;
+            margin-top: 60px; 
+            margin-left: 42px;
+        }
+        img{
+            margin-left: 126px;
+        }
+    }
+    .awsome_features{
+        .features_items{
+            margin-top: 28px;
+            .feature_info{
+                height: 90px;
+                width: 370px;
+                display: flex;
+                gap: 15px;
+                position: relative;
+                cursor: pointer;
+                &::after{
+                    content: "";
+                    width: 270px;
+                    height: 1px;
+                    background: #353535;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 0;
+                    transition: all linear 0.3s;
+                }
+                &:hover{
+                    color: #744fa0;
+                    &::after{
+                        width: 370px;
+                        background: #744fa0;
+                    }
+                     .feature_text{
+                        h4{
+                            color: #744fa0;
+                        }
+                        h5{
+                            color: #744fa0;
+                        }
+                    }
+                }
+                .feature_image{
+                    width: 34px;
+                    height: 100%;
+                }
+                .feature_text{
+                    width: 336px;
+                    height: 100%;
+                    h4{
+                        font-family: var(--ff-1);
+                        font-weight: 700;
+                        font-size: 18px;
+                        @include sub_color;
+                        text-transform: uppercase;
+                        transition: all linear 0.3s;
+                    }
+                    h5{
+                        font-family: var(--ff-2);
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #555555;
+                        transition: all linear 0.3s;
+                    }
+                }
+            }
+            
+        }
+    }
+    .main_feature{
+        img{
+            margin-left: 60px;
+        }
+    }
+    .description{
+        h2{
+            font-family: var(--ff-1);
+            font-weight: 700;
+            font-size: 18px;
+            color: #353535;
+            margin-left: 221px;
+        }
+        .ralway{
+            font-family: var(--ff-1);
+            font-weight: 400;
+            font-size: 14px;
+            color: #555555;
+        }
+        .opensans{
+            font-family: var(--ff-2);
+            font-weight: 400;
+            font-size: 14px;
+            color: #555555;
+            span{
+                margin-left: 172px;
+            }
+        }
+    }
+}

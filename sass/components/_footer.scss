@@ -1,0 +1,52 @@
+// ---- 🙂 ------
+@import "../mixin/mixin";
+@import "../variables/variables";
+// ---- 🙂 ------
+
+
+#footer{
+    margin-top: 100px;
+    background: #353535;
+    .footer_main_part{
+        img{
+            margin-left: 82px;
+            margin-top: 12px;
+        }
+        .icon{}
+    }
+    .icon{
+        display: flex;
+        gap: 10px;
+        margin-top: 36px;
+        margin-left: 80px;
+        .shape{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all linear 0.3s;
+            &:hover{
+                background: #744fa0;
+                cursor: pointer;
+            }
+        }
+    }
+    p{
+        font-family: var(--ff-1);
+        font-size: 14px;
+        font-weight: 400;
+        color: #f1f1f1;
+        margin-left: 60px;
+        margin-top: 17px;
+        span{
+            color: #744fa0;
+        }
+    }
+}
+
+
+
+// -------------All Done 🙂 ---------------
